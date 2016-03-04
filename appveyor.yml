@@ -4,7 +4,7 @@ platform:
 
 install:
   - MSBuild.exe keyhac.sln /target:Build /property:Configuration=Release,Platform=x86
-  - cinst -y doxygen.install
+#  - cinst -y doxygen.install
   - python makefile.py
 
 build: off
