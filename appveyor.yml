@@ -3,7 +3,7 @@ platform:
   - x86
 
 install:
-  - MSBuild.exe keyhac.sln /target:Build /property:Configuration=Release,Platform=Win32
+  - MSBuild.exe keyhac.sln /target:Build /property:Configuration=Release,Platform=x86
   - cinst -y doxygen.install
   - python makefile.py
 
